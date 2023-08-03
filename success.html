@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Success Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .dashboard-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Dashboard</h1>
+    <p>This is the dashboard page where you can access various features and information.</p>
+    <form action="/dashboard" method="post">
+      <div class="form-group">
+        <label for="dashboard-email">Email</label>
+        <input type="email" id="dashboard-email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="dashboard-password">Password</label>
+        <input type="password" id="dashboard-password" name="password" required>
+      </div>
+      <button type="submit" class="btn">Access Dashboard</button>
+    </form>
+    <div class="dashboard-link">
+      <a href="dashboard.html">Go to Dashboard</a>
+    </div>
+  </div>
+</body>
+</html>
